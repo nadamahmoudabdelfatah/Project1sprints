@@ -1,0 +1,62 @@
+#include"IntCtrl_Cfg.h"
+#include"IntCtrl.h"
+IntCtrl_ConfigType Container =
+                                        {
+EN0,PRI0,GPIO_INTA		    ,2  ,	STD_OFF	,																			
+EN0,PRI0,GPIO_INTB			,2	,	STD_OFF	,																	
+EN0,PRI0,GPIO_INTC			,2	,	STD_OFF	,																	
+EN0,PRI0,GPIO_INTD			,2	,	STD_OFF	,																	
+EN0,PRI1,GPIO_INTE			,2	,	STD_OFF	,																	
+EN0,PRI1,UART0_INT			,2	,	STD_OFF	,																	
+EN0,PRI1,UART1_INT			,2	,	STD_OFF	,																	
+EN0,PRI1,SSI0_INT			,2	,	STD_OFF	,																	
+EN0,PRI2,I2C0_INT			,2	,	STD_OFF	,																	
+EN0,PRI2,PWMFAULT_INT		,2	,	STD_OFF	,																		
+EN0,PRI2,PWMGEN0_INT		,2	,	STD_OFF	,																		
+EN0,PRI2,PWMGEN1_INT		,2	,	STD_OFF	,																		
+EN0,PRI3,PWMGEN2_INT		,2	,	STD_OFF	,																		
+EN0,PRI3,QUADENCODER_INT	,2	,	STD_OFF	,																			
+EN0,PRI3,ADCSEQ0_INT		,2	,	STD_OFF	,																		
+EN0,PRI3,ADCSEQ1_INT		,2	,	STD_OFF	,																		
+EN0,PRI4,ADCSEQ2_INT		,2	,	STD_OFF	,																		
+EN0,PRI4,ADCSEQ3_INT		,2	,	STD_OFF	,																		
+EN0,PRI4,WDT_INT			,2	,	STD_OFF	,																	
+EN0,PRI4,TMR0A_INT			,2	,	STD_OFF	,																	
+EN0,PRI5,TMR0B_INT			,2	,	STD_OFF	,																	
+EN0,PRI5,TMR1A_INT			,2	,	STD_OFF	,																	
+EN0,PRI5,TMR1B_INT			,2	,	STD_OFF	,																	
+EN0,PRI5,TMR2A_INT			,2	,	STD_OFF	,																	
+EN0,PRI6,TMR2B_INT			,2	,	STD_OFF	,																	
+EN0,PRI6,CMP0_INT			,2	,	STD_OFF	,																	
+EN0,PRI6,CMP1_INT			,2	,	STD_OFF	,																	
+EN0,PRI6,CMP2_INT			,2	,	STD_OFF	,																	
+EN0,PRI7,SYSCTRL_INT		,2	,	STD_OFF	,																		
+EN0,PRI7,FLASHCTRL_INT		,2	,	STD_OFF	,																		
+EN0,PRI7,GPIO_INTF			,2	,	STD_ON	,																	
+EN0,PRI7,GPIO_INTG			,2	,	STD_OFF	,																	
+EN0,PRI8,GPIO_INTH			,2	,	STD_OFF	,																	
+EN1,PRI8,UART2_INT			,2	,	STD_OFF	,																	
+EN1,PRI8,SSI2_INT			,2	,	STD_OFF	,																	
+EN1,PRI8,TMR3A_INT			,2	,	STD_OFF	,																	
+EN1,PRI9,TMR3B_INT			,2	,	STD_OFF	,																	
+EN1,PRI9,I2C1_INT			,2	,	STD_OFF	,																	
+EN1,PRI9,QUADENCODER1_INT	,2	,	STD_OFF	,																			
+EN1,PRI9,CAN0_INT			,2	,	STD_OFF	,																	
+EN1,PRI10,CAN1_INT			,2	,	STD_OFF	,																	
+EN1,PRI10,CAN2_INT			,2	,	STD_OFF	,																	
+EN1,PRI10,ETHERNET_INTH		,2	,	STD_OFF	,																		
+EN1,PRI10,HIBERNATE_INT		,2	,	STD_OFF	,																		
+EN1,PRI11,USB0_INT			,2	,	STD_OFF	,																	
+EN1,PRI11,PWMGEN3_INT		,2	,	STD_OFF	,																		
+EN1,PRI11,DMASOFT_INT		,2	,	STD_OFF	,																		
+EN1,PRI11,DMAERROR_INT		,2	,	STD_OFF	,																		
+EN1,PRI12,DEBUG_INT			,2	,	STD_OFF	,																	
+EN1,PRI12,RESERVED			,2	,	STD_OFF	,																	
+EN1,PRI12,PENDSV_INT		,2	,	STD_OFF	,																		
+EN1,PRI12,SYSTICK_INT		,2	,	STD_OFF	                                   
+                                        };
+/*******************************************************/
+IntCtrl_ExtPortConfigContainer Ext_Container = 
+{
+PortConf_PortF,4,STD_OFF,STD_OFF,STD_OFF,STD_ON,STD_ON
+};
